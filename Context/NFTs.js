@@ -68,9 +68,9 @@ setUerBlance(userBalance);
              
         });
         console.log(response);
-             console.log();
+             console.log("contract call success" , createNFTS);
 
-             
+
     } catch (error) {
         
     }
