@@ -1,6 +1,6 @@
 cd /** @type import('hardhat/config').HardhatUserConfig */
 
-const PRIVATE_KEY = "5de4111afa1a4b94908f83103eb1f1706367c2e68ca870fc3fb9a804cdab365a";
+const PRIVATE_KEY = "316a9693ad7d8803140293b9a34fcacaacaf0cc81d9dc831560c38bdb2bab5dd";
 const RPC_URL = "https://rpc.ankr.com/polygon_mumbai";
 module.exports = {
   defaultNetwork: "polygon_mumbai",
