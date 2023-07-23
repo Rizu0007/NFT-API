@@ -1,8 +1,11 @@
 import React from 'react'
+import {  Logo , Button} from '../Components'
 
 const layout = () => {
   return (
-    <div>
+    <div className='home'>
+    <Logo/>
+    <Button/>
       layout
     </div>
   )
