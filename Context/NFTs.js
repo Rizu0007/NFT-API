@@ -1,5 +1,4 @@
-import React , {useState , useEffect , useContext, createContext} from 'react';
-import axios, { all } from 'axios';
+import { createContext, useContext, useEffect, useState } from 'react';
 import {
     useAddress,
     useContract,
@@ -8,8 +7,10 @@ import {
     useSigner,
 } from "@thirdweb-dev/react";
 import { ethers } from 'ethers';
-import { response } from 'express';
+
+
 const StateContext=createContext();
+
 
 export const StateContextProvider=({children})=>{
  const {contract}  =useContract(
@@ -165,7 +166,7 @@ const getSingleNftsAPI= async (id)=>{
 
 }
 return(
-    <StateContextProvider value={{
+    <StateContext.Provider value={{
         address,
         contract,
         connect,
@@ -187,7 +188,7 @@ return(
     >
     {children}
 
-    </StateContextProvider>
+    </StateContext.Provider>
 )
 
 
